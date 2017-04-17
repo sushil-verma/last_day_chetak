@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" 
+ android:orientation="vertical"
+ android:weightSum="100">
+ 
+    
+    
+    <FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/journeycontainer" 
+     > 
+           
+         <com.google.android.gms.maps.MapView
+             android:id="@+id/journeymap"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+         </com.google.android.gms.maps.MapView>
+ 
+          
+          <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:orientation="vertical"
+             android:weightSum="100"
+             android:layout_gravity="top"
+             android:minHeight="81dp"
+
+             android:layout_margin="18dp"
+              android:id="@+id/to_from"
+
+             >
+             
+              
+            <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp" 
+              android:layout_weight="50"
+             android:orientation="horizontal"
+             android:weightSum="100"
+             android:background="@drawable/layoutborder"
+             android:elevation="1dp"
+            
+             
+            
+            >  
+             
+             <ImageView
+              android:layout_height="fill_parent"
+              android:layout_width="0dp"
+              android:src="@drawable/gbaloon"
+              
+              android:layout_weight="10"
+                 android:padding="7dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginBottom="7dp"
+                 android:layout_marginTop="4dp"
+
+
+
+                 />
+               
+            
+             <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="90" 
+             android:orientation="vertical"
+             android:weightSum="100"
+           
+             >  
+   
+            <TextView
+             android:layout_height="0dp"
+             android:layout_width="match_parent"
+             android:text="Pickup Point"
+             android:textStyle="normal"
+             android:layout_weight="45"
+             android:textColor="#616161"
+             android:textSize="10sp"
+             android:paddingLeft="2dp"
+             android:layout_marginTop="9dp"
+
+             
+            />
+              
+           <TextView
+           android:layout_height="0dp"
+          
+           android:layout_width="match_parent"
+           android:layout_weight="55"
+           android:id="@+id/livepickuppoint"
+           android:layout_marginTop="2dp"
+           android:layout_marginLeft="0dp"
+           android:layout_marginBottom="11dp"
+           android:textColor="#000000"
+           android:textSize="14sp"
+
+           android:paddingLeft="1dp"
+           android:textStyle="normal"
+           android:ellipsize="end"
+           android:singleLine="true"
+          
+           />
+           
+                
+           
+           </LinearLayout>
+     
+    
+        </LinearLayout>
+           
+           
+           
+           
+               
+            <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp" 
+              android:layout_weight="50"
+             android:orientation="horizontal"
+             android:weightSum="100"
+             android:background="@drawable/layoutbordertopless"
+             android:elevation="1dp"
+            
+             
+            
+            >  
+             
+             <ImageView
+              android:layout_height="fill_parent"
+              android:layout_width="0dp"
+              android:src="@drawable/rbaloon"
+                 android:layout_weight="10"
+                 android:padding="7dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginBottom="7dp"
+                 android:layout_marginTop="4dp"
+
+                 />
+               
+            
+             <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="90" 
+             android:orientation="vertical"
+             android:weightSum="100"
+           
+             >  
+               
+            
+  
+            <TextView
+             android:layout_height="0dp"
+             
+             android:layout_width="match_parent"
+             android:text="Destination Point"
+             android:textStyle="normal"
+             android:layout_weight="45"
+             android:textColor="#616161"
+             android:textSize="10sp"
+             android:paddingLeft="2dp"
+             android:layout_marginTop="9dp"
+
+             
+            />
+              
+           <TextView
+           android:layout_height="0dp"
+          
+           android:layout_width="match_parent"
+           android:layout_weight="55"
+           android:id="@+id/livedestinationppoint"
+           android:layout_marginTop="2dp"
+           android:layout_marginLeft="0dp"
+           android:layout_marginBottom="11dp"
+           android:textColor="#000000"
+           android:textSize="14sp"
+
+           android:paddingLeft="1dp"
+           android:textStyle="normal"
+           android:ellipsize="end"
+           android:singleLine="true"
+          
+           />
+           
+                
+           
+           </LinearLayout>
+     
+    
+        </LinearLayout>
+        
+            
+         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dp"
+            android:weightSum="1">
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/vehiclelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:clickable="true"
+                android:layout_margin="4dp"
+                android:layout_weight="1.44" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="0dp"
+            android:background="@drawable/infowindow_vicle_no_available_bg"
+            android:id="@+id/vehicle_flag_jrny"
+            android:padding="2dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Vehicles Available"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:typeface="normal"
+                android:gravity="center_horizontal|center"
+                android:background="@drawable/infowindow_vicle_no_available_bg_textbox"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        
+    </FrameLayout>
+    
+    
+        
+        
+  
+    
+    
+</LinearLayout>

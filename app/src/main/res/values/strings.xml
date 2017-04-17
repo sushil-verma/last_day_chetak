@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">MavynC</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+
+    <string name="write_comment">write comment</string>
+
+    <string name="prompt_email">Mobile no.</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Please check Mobile No."
+    </string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_shipment">Map</string>
+    <string name="title_activity_order">Book Shipment</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_test_actiity">TestActiity</string>
+    <string name="title_activity_confirm_shipment">User Confirmation</string>
+    <string name="confirmpay"> Confirm  </string>
+    <string name="vehicle_prompt">Select Vehicl No</string>
+    <string name="alert_dialog_two_buttons_title">Confirm To Logout</string>
+    <string name="alert_dialog_two_buttons_title_if_exit_app">Are you sure! You want to close ?</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_gr_tc">GR Terms &amp; Condition </string>
+
+
+    <string name="Gr_detail1"><b> 1 <sub>\u2022 </sub> MAYVN WAY BILL : </b>This Way Bill to be regarded as a “Contract” Between Owners or dispatchers of the goods specified on the face of this Way Bill on the one hand and MAYVN hereinafter referred to as “MAYVN” (which terms shall include its Employees, Servants, Agents) on the other hand for the transportation of the said goods as booked from Booking station, specified on Way Bill to the Destination Station. This Way Bill is NOT NEGOTIABLE with any Bank/Finance Company/Financial Institution. All shipments are carried under The Carriers Act and at Owner’s risk unless &amp; until otherwise specifically agreed in writing by MAYVN by charging specific risk charges as mentioned on the front of this Way Bill. </string>
+    <string name="Gr_detail2"> <b>2 <sub>\u2022 </sub>  MAYVN </b>: accepts all kinds of goods for transportation like Valuables, Commercial Documents, Literature, Sophisticated / High Technology Goods, Papers, Manuscripts, Securities of all kinds, Materials, Merchandise. Trade Samples and other items of a like nature but EXCLUDING all dangerous, explosives, hazardous, inflammable, combustible, contraband &amp; prohibited goods, bullion, gems, currency notes, bearer form negotiable instruments, animals, firearms or part thereof, ammunition, human remains, pornogtaphy and illegal narcotics/drugs etc. MAYVN has the right but not obligation to open and/or inspect any or all consignments. Every shipment shall be charged by its chargeable weight and not by actual weight. In case of volumetric material/goods/products, CFT will be applicable as per sole discretion of MAYVN.</string>
+    <string name="Gr_detail3"><b>3 <sub>\u2022 </sub> CARRYING TERMS &amp; CONDITIONS : </b> MAYVN hereby agree to carry the goods from Booking Station (Consignor) to the Destination Station (Consignee) as specified on the face of the Way Bill on terms and conditions as set hereunder. All goods are acceptable for transportation by Road, Rail, Air or Sea at the sole discretion of the MAYVN to carry the goods through any media as it may deem fit. No Employee, except management of the MAYVN may in any manner, alter or modify the terms and conditions set on this Way Bill. The consignments are acceptable for transportation by MAYVN on Consignor\'s declaration that they do not contain any CONTRABAND or PROHIBITED or DANGEROUS or HAZARDOUS goods/items/materials and that they are properly Packed, Marked and Addressed so as to ensure safe transportation and delivery. The Consignor(s) acknowledge that the MAYVN is not a “Common Carrier” and that MAYVN at times shall have the right to refuse any goods offered for transportation without assigning any reason whatsoever. As the contents, nature quality, condition and value of the subject consignment are unknown to the MAYVN and the same has been accepted (as packed and declared by the owners) in good faith for transportation as indicated on the face of this Way Bill. Therefore MAYVN shall not, in any way, be kept responsible or liable to the Consignor and/or Consignee for any loss of damage to or non delivery, of the subject consignment, attributable to or caused by any improper and/or erroneous documentation or incorrect or false declaration and/or defective packing, marking or addressing of the subject consignment by Consignor(s), but the Consignor(s) shall be solely responsible and liable to the MAYVN for all the consequences of their improper actions as mentioned above. The Consignor/Consignee shall without any limitation, be solely liable to the MAYVN for all costs and expenses which would include OCTROI /OTHER TAXES/ LEVIES/IMPOST etc., in relation to the consignment and the Consignee.  </string>
+    <string name="Gr_detail4"> <b>4 <sub>\u2022 </sub> INSURANCE : </b>In Transit as well as Warehouse Stock Insurance shall be organised by Consignor/Consignee, since we carry the consignment at Owners\' risk only. In case of any mishap/transit loss/shortages/damages/breakages/leakages etc, MAYVN shall issue you only a \" CERFIFICATE OF FACTS\"(COF) for lodging the insurance claim with your underwriter. MAYVN\'s legal liability is restricted to Rs. 1/per kg under the CarriersAct.  </string>
+
+
+    <string name="Gr_detail5"> <b>5  <sub>\u2022 </sub> DEMURRAGE : </b>If material is not lifted by Consignor/Consignee within 15 days from receipt of the same by our delivery branch, then MAYVN shall charge demurrage charges @ 0.05 paise per kg per day for each additional day of storage beyond the said 15 days.  </string>
+
+
+    <string name="Gr_detail6"> <b>6  <sub>\u2022 </sub> LIEN ON CONSIGNMENT :</b> MAYVN shall have a general lien on consignments in case the Consignee fails to pay the Freight Octroi, State and Local Taxes or other charges on the consignment due to any reasons. MAYVN may refuse to surrender possession of goods until all such charges are paid.  </string>
+
+    <string name="Gr_detail7"> <b>7  <sub>\u2022 </sub> LIMITATION OF MAYVN LIABILITY :</b> The liability of MAYVN to the Consignor/Consignee for any loss or damage to or non delivery of the subject consignment shall be limited to Rs. 1,000/- (Rupees One Thousand Only) for non-commercial goods and documents unless otherwise agreed to and specifically declared on the face of this Way Bill.  </string>
+
+    <string name="Gr_detail8"> <b>8  <sub>\u2022 </sub> LIABILITIES NOT ASSUMED BY MAYVN :</b> While the company will use its best endeavors to effect delivery of the subject consignment as agreed, MAYVN will not, in any circumstances assume any responsibility or liability for any Loss (direct or consequential, irrespective of the amount involved) alleged to have been sustained by the Consignor/Consignee arising out of or caused by delay in the pickup, transportation and delivery of the subject Consignment due to (a) Act of God, Force Majeure, natural calamities , floods or convulsions of nature, any variations in temperature, weather conditions etc., fire and explosion, accidents to the carrying vehicles, the action of terrorists, militants or activists or by persons acting from a political motive or caused by or resulting from strikes, lockouts, labour disturbances, riots or civil commotions, etc. Provided MAYVN has exercised reasonable care and precautions in the transportation of the subject consignment. (b)Any act, fault, omission on the part of the Consignor/Consignee or any other interested third party, howsoever arising. (c) Government officials, in discharge of their official duties such as customs/taxation/octroi inspection etc. (d) Electric or magnetic injury, erasure or other such damage to photographic or Electronic Pictures, Images or recordings in any form.(e) The nature of the consignment or any defect, characteristics, inherent vice, thereof.  </string>
+
+    <string name="Gr_detail9"><b> 9  <sub>\u2022 </sub> CLAIM FOR LOSS OR DAMAGE TO THE SUBJECT CONSIGNMENT : </b>No claim shall be entertained by the MAYVN until and unless all its Transportation charges etc., or any outstanding charges are paid by the CONSIGNOR OR CONSIGNEE as the case may be and if any claim arises against subject consignment it would be brought into the notice of the Company in writing within 7 days from the date of booking at the Booking Station. Any such claim will not be entertained by the Company after expiry of 10 days from the date of Booking.  </string>
+
+    <string name="Gr_detail10"><b>10 <sub>\u2022 </sub> </b> This contract shall not enure to the benefit of any of the General Insurers operating in India.   </string>
+
+    <string name="Gr_detail11"><b>11 <sub>\u2022 </sub> </b> No suit shall lie against MAYVN in respect of or in relation to the subject consignment after expiry of 3 months from the date of the Booking.  </string>
+
+    <string name="Gr_detail12"> <b>12 <sub>\u2022 </sub> JURISDICTION :</b> The competent Court in the State of DELHI alone shall have jurisdiction in respect of all claims and/or matters pertaining to the subject Consignment or arising out of this contract.  </string>
+    <string name="title_activity_pyment_t_c">Payment Terms &amp; Condition</string>
+
+    <string name="Payment_tc1"><b>\u2022 </b>All on-line payments made towards availing Services shall be taken into consideration only when the relevant amount is received and credited in the Company\'s bank account. The User booking for the Service shall pay all amounts including but not limited to the fare (as agreed), halting charges and any fee or levy presently payable or hereinafter imposed by the law or required to be paid for availing of the Services. User authorizes the Company to retain any consignments that are booked till all dues of the Company are recovered. </string>
+
+    <string name="Payment_tc2"><b>\u2022 </b>The User agrees and accepts that the use of the Services provided by the Company is at its sole risk, and further acknowledges that the Company disclaims all representations and warranties of any kind, whether express or implied. In case of cancellation of the booking, after making on-line payment, refund of the amount shall be paid within 10 working days after the said amount is received and credited in company\'s bank account. A small amount of service charge may be levied on such cancellations as per Company Policy from time to time. For any refund amount of cancellation please contact us in our Customer care no +91 9811747777 or on our email:- info@mavyn.in  </string>
+    <string name="title_activity_gr_tc1">Goods Receipt T &amp; C</string>
+    <string name="title_activity_gr_tc2">General Terms&amp; Conditon</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

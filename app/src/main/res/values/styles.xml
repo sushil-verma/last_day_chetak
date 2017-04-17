@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:textColorPrimary">@color/common_plus_signin_btn_text_light_disabled
+        </item>
+        <item name="android:colorForeground">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimaryInverse">
+            @color/abc_btn_colored_borderless_text_material
+        </item>
+        <item name="android:windowBackground">@color/btn_default</item>
+
+    </style>
+
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/green</item>
+    </style>
+
+    <!-- <style name="AppTheme.ActionBar.TabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+        &lt;!&ndash; This is a WHITE tab color &ndash;&gt;
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>-->
+
+
+    <style name="Widget.Design.TextInputLayout" parent="AppTheme">
+        <item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextErrorAppearance</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow
+        </item>
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="fab" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorForeground">@android:color/holo_orange_light</item>
+        <item name="android:colorBackground">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimary">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_search_url_text</item>
+        <item name="android:textColorSecondary">@android:color/holo_orange_light</item>
+    </style>
+
+
+    <style name="MyGreenButton">
+        <item name="colorButtonNormal">#009900</item>
+    </style>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00c853</color>
+    <color name="gray">#757575</color>
+
+
+    <style name="dialog_light_gr" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="@android:background">@color/white</item>
+        <item name="@android:textColor">@color/black</item>
+        <item name="@android:height">50dp</item>
+        <item name="@android:width">200dp</item>
+    </style>
+
+
+</resources>

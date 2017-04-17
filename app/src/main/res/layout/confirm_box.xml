@@ -1,0 +1,665 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#ffffff"
+     >
+<!-- first line -->
+
+
+
+  
+   <!-- second line -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_margin="10dp"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="15"
+            android:orientation="vertical"
+
+            android:weightSum="100" >
+
+            <ImageView
+                
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="50"
+                  android:padding="5dp"
+                android:layout_marginBottom="8dp"
+
+                android:src="@drawable/truck" />
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="50"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/calender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:padding="0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Shipment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Date#Time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/cdetailshipment_no"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                 />
+
+            <TextView
+                android:id="@+id/ship_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="27"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/truck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:padding="0dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Truck No" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Vehicle Type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/truck_no"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                 />
+
+            <TextView
+                android:id="@+id/truck_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#ffffff"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="50"
+                android:padding="5dp"
+                android:src="@drawable/ratedriver"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:id="@+id/mobileimage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="50"
+                android:padding="5dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/call" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Driver Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                android:text="Driver No" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            android:weightSum="100"
+              android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                 />
+
+            <TextView
+                android:id="@+id/driver_no"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="50"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="15"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="50"
+                    android:padding="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/markergreen2"
+                     />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="50"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/markerred2"
+                    android:padding="8dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    android:text="Origin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    android:text="Destination" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="60"
+                android:orientation="vertical"
+                android:weightSum="100"
+                  android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                     />
+
+                <TextView
+                    android:id="@+id/cdetaildestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        >
+   
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="#ffffff"
+    android:elevation="0dp"
+ 
+     >
+    
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:weightSum="100">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/vehicle_image1"
+                android:src="@drawable/journey"
+                android:layout_gravity="top"
+                android:padding="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="50"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:src="@drawable/distanceicon"
+                android:layout_gravity="top"
+                android:padding="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="50"
+                />
+  
+     </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:paddingTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Time"
+            android:layout_gravity="left"
+            android:layout_weight="50"
+            />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Distance"
+            android:layout_gravity="left"
+            android:layout_weight="50"
+            />
+         
+         
+            />
+  
+  
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="5dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:id="@+id/travel_time"
+           android:layout_gravity="left"
+           android:layout_weight="50"
+
+           />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_gravity="left"
+             android:layout_weight="50"
+             android:id="@+id/travel_distance"
+            />
+        
+     </LinearLayout>
+  
+     
+  </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="#ffffff"
+            android:elevation="0dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:layout_gravity="left"
+                android:orientation="vertical"
+                android:weightSum="100"
+               >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/eta111"
+                    android:src="@drawable/journey"
+                    android:layout_gravity="top"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="50"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:src="@drawable/distanceicon"
+                    android:layout_gravity="top"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="50"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:layout_gravity="left"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Time"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="Distance"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    />
+
+
+                />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:layout_gravity="left"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/eta"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    android:id="@+id/freight_bill"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>         
+   
+
+
+  
+    
+    
+    

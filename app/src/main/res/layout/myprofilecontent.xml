@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+
+  >
+
+
+        <!--   Parent Layout With Vertical Orientation -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:weightSum="100"
+            android:background="@drawable/profile_back_ground">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="top"
+                    android:src="@drawable/mobile"
+                    android:layout_marginBottom="20dp"
+
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground"
+                    >
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="Email Id"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        android:paddingTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/myprofileemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="sushil@gmail.com"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--  1st Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    android:layout_marginBottom="20dp"
+
+                    android:src="@drawable/mobile"
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+
+                        android:text="Mobile No"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        />
+
+                    <TextView
+                        android:id="@+id/myprofilemobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="9911223344"
+                        android:textColor="#000000"
+
+
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--  1st Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="10"
+
+                    android:src="@drawable/profile"
+                    android:layout_marginBottom="20dp"
+
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+
+                        android:text="Name"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        android:paddingTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/myprofilename"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="sushil kumar verma"
+                        android:textColor="#000000"
+
+
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--  1st Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
+
+
+            <TextView
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:text="Cash Back -Bank Detail"
+                android:textColor="#ffffff"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+
+
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    android:textSize="15dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+
+                        android:text="Bank Name"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        android:paddingTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="Sbi kapashera"
+                        android:textColor="#000000"
+
+
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    android:textSize="15dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+
+                        android:text="A/C Number"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        android:paddingTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/acno"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="662233445566"
+                        android:textColor="#000000"
+
+
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="10"
+                    android:textSize="15dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <LinearLayout
+
+                    android:layout_weight="90"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp"
+                    android:weightSum="100"
+                    android:background="@drawable/profile_back_ground">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+
+                        android:text="IFSC Code"
+                        android:textSize="10dp"
+                        android:layout_weight="40"
+                        android:textColor="#9e9e9e"
+                        android:paddingTop="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/ifccode"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:text="662233445566"
+                        android:textColor="#000000"
+
+
+                        android:textSize="15dp"
+                        android:layout_weight="60"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+

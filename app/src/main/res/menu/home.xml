@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <item
+        android:id="@+id/action_settings21"
+        android:orderInCategory="100"
+        android:title="Set your city"
+        app:showAsAction="never" />
+
+
+
+    <group android:checkableBehavior="single">
+
+    <item
+    android:id="@+id/action_settings1"
+    android:orderInCategory="100"
+    android:title="new delhi"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="west delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:title="south delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings4"
+        android:orderInCategory="100"
+        android:title="Benglore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings5"
+        android:orderInCategory="100"
+        android:title="Pune"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings11"
+        android:orderInCategory="100"
+        android:title="new delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings22"
+        android:orderInCategory="100"
+        android:title="west delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings33"
+        android:orderInCategory="100"
+        android:title="south delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings44"
+        android:orderInCategory="100"
+        android:title="Benglore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings55"
+        android:orderInCategory="100"
+        android:title="Pune"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings111"
+        android:orderInCategory="100"
+        android:title="new delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings222"
+        android:orderInCategory="100"
+        android:title="west delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings333"
+        android:orderInCategory="100"
+        android:title="south delhi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings444"
+        android:orderInCategory="100"
+        android:title="Benglore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings555"
+        android:orderInCategory="100"
+        android:title="Pune"
+        app:showAsAction="never" />
+    </group>
+</menu>

@@ -1,0 +1,3061 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+			<style>
+
+
+
+body {
+  margin: 0;
+}
+
+td,th {
+  padding: 0;
+}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print {
+  *,:after,:before {
+    color: #000!important;
+    text-shadow: none!important;
+    background: 0 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+  }
+
+  a,a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after,a[href^="#"]:after {
+    content: "";
+  }
+
+  blockquote,pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  img,tr {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100%!important;
+  }
+
+  h2,h3,p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,h3 {
+    page-break-after: avoid;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .btn>.caret,.dropup>.btn>.caret {
+    border-top-color: #000!important;
+  }
+
+  .label {
+    border: 1px solid #000;
+  }
+
+  .table {
+    border-collapse: collapse!important;
+  }
+
+  .table td,.table th {
+    background-color: #fff!important;
+  }
+
+  .table-bordered td,.table-bordered th {
+    border: 1px solid #ddd!important;
+  }
+}
+@font-face {
+  font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+
+.glyphicon-plus:before {
+  content: "\2b";
+}
+
+.glyphicon-eur:before,.glyphicon-euro:before {
+  content: "\20ac";
+}
+
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+:after,:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button,input,select,textarea {
+ 
+  font-size: inherit;
+  line-height: inherit;
+  padding:3px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:focus,a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: 6px;
+}
+
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable:active,.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #777;
+}
+
+.h1,.h2,.h3,h1,h2,h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small {
+  font-size: 65%;
+}
+
+.h4,.h5,.h6,h4,h5,h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
+  font-size: 75%;
+}
+
+.h1,h1 {
+  font-size: 36px;
+}
+
+.h2,h2 {
+  font-size: 30px;
+}
+
+.h3,h3 {
+  font-size: 24px;
+}
+
+.h4,h4 {
+  font-size: 18px;
+}
+
+.h5,h5 {
+  font-size: 14px;
+}
+
+.h6,h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media (min-width:768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+
+.small,small {
+  font-size: 85%;
+}
+
+.mark,mark {
+  padding: .2em;
+  background-color: #fcf8e3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: #777;
+}
+
+.text-primary {
+  color: #337ab7;
+}
+
+a.text-primary:focus,a.text-primary:hover {
+  color: #286090;
+}
+
+.text-success {
+  color: #3c763d;
+}
+
+a.text-success:focus,a.text-success:hover {
+  color: #2b542c;
+}
+
+.text-info {
+  color: #31708f;
+}
+
+a.text-info:focus,a.text-info:hover {
+  color: #245269;
+}
+
+.text-warning {
+  color: #8a6d3b;
+}
+
+a.text-warning:focus,a.text-warning:hover {
+  color: #66512c;
+}
+
+.text-danger {
+  color: #a94442;
+}
+
+a.text-danger:focus,a.text-danger:hover {
+  color: #843534;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+a.bg-primary:focus,a.bg-primary:hover {
+  background-color: #286090;
+}
+
+.bg-success {
+  background-color: #dff0d8;
+}
+
+a.bg-success:focus,a.bg-success:hover {
+  background-color: #c1e2b3;
+}
+
+.bg-info {
+  background-color: #d9edf7;
+}
+
+a.bg-info:focus,a.bg-info:hover {
+  background-color: #afd9ee;
+}
+
+.bg-warning {
+  background-color: #fcf8e3;
+}
+
+a.bg-warning:focus,a.bg-warning:hover {
+  background-color: #f7ecb5;
+}
+
+.bg-danger {
+  background-color: #f2dede;
+}
+
+a.bg-danger:focus,a.bg-danger:hover {
+  background-color: #e4b9b9;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+ol,ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+   margin-right: 30px;
+}
+
+ol ol,ol ul,ul ol,ul ul {
+  margin-bottom: 0;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+dd,dt {
+  line-height: 1.42857143;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+}
+
+@media (min-width:768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+
+abbr[data-original-title],abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #777;
+}
+
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+
+blockquote ol:last-child,blockquote p:last-child,blockquote ul:last-child {
+  margin-bottom: 0;
+}
+
+blockquote .small,blockquote footer,blockquote small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
+}
+
+blockquote .small:before,blockquote footer:before,blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+.blockquote-reverse,blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+  border-right: 5px solid #eee;
+  border-left: 0;
+}
+
+.blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before {
+  content: '';
+}
+
+.blockquote-reverse .small:after,.blockquote-reverse footer:after,.blockquote-reverse small:after,blockquote.pull-right .small:after,blockquote.pull-right footer:after,blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+
+code,kbd,pre,samp {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: 700;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
+  float: left;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+.col-xs-pull-0 {
+  right: auto;
+}
+
+.col-xs-push-12 {
+  left: 100%;
+}
+
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+.col-xs-push-9 {
+  left: 75%;
+}
+
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+.col-xs-push-6 {
+  left: 50%;
+}
+
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+.col-xs-push-3 {
+  left: 25%;
+}
+
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+.col-xs-push-0 {
+  left: auto;
+}
+
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+.col-xs-offset-0 {
+  margin-left: 0;
+}
+
+@media (min-width:768px) {
+  .col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9 {
+    float: left;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-sm-offset-0 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:992px) {
+  .col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9 {
+    float: left;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9 {
+    float: left;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .container .jumbotron,.container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .jumbotron .h1,.jumbotron h1 {
+    font-size: 63px;
+  }
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.thumbnail a>img,.thumbnail>img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+ /* background-color: #f5f5f5;*/
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+ 
+}
+
+.media {
+  margin-top: 15px;
+}
+
+.media:first-child {
+  margin-top: 0;
+}
+
+.media,.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-object {
+  display: block;
+}
+
+.media-object.img-thumbnail {
+  max-width: none;
+}
+
+.media-right,.media>.pull-right {
+  padding-left: 10px;
+}
+
+.media-left,.media>.pull-left {
+  padding-right: 10px;
+}
+
+.media-body,.media-left,.media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+a.list-group-item,button.list-group-item {
+  color: #555;
+}
+
+a.list-group-item .list-group-item-heading,button.list-group-item .list-group-item-heading {
+  color: #333;
+}
+
+a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,button.list-group-item:hover {
+  color: #555;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+button.list-group-item {
+  width: 100%;
+  text-align: left;
+}
+
+.list-group-item.disabled,.list-group-item.disabled:focus,.list-group-item.disabled:hover {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+.list-group-item.disabled .list-group-item-heading,.list-group-item.disabled:focus .list-group-item-heading,.list-group-item.disabled:hover .list-group-item-heading {
+  color: inherit;
+}
+
+.list-group-item.disabled .list-group-item-text,.list-group-item.disabled:focus .list-group-item-text,.list-group-item.disabled:hover .list-group-item-text {
+  color: #777;
+}
+
+.list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover {
+  z-index: 2;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.list-group-item.active .list-group-item-heading,.list-group-item.active .list-group-item-heading>.small,.list-group-item.active .list-group-item-heading>small,.list-group-item.active:focus .list-group-item-heading,.list-group-item.active:focus .list-group-item-heading>.small,.list-group-item.active:focus .list-group-item-heading>small,.list-group-item.active:hover .list-group-item-heading,.list-group-item.active:hover .list-group-item-heading>.small,.list-group-item.active:hover .list-group-item-heading>small {
+  color: inherit;
+}
+
+.list-group-item.active .list-group-item-text,.list-group-item.active:focus .list-group-item-text,.list-group-item.active:hover .list-group-item-text {
+  color: #c7ddef;
+}
+
+.list-group-item-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+a.list-group-item-success,button.list-group-item-success {
+  color: #3c763d;
+}
+
+a.list-group-item-success .list-group-item-heading,button.list-group-item-success .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item-success:focus,a.list-group-item-success:hover,button.list-group-item-success:focus,button.list-group-item-success:hover {
+  color: #3c763d;
+  background-color: #d0e9c6;
+}
+
+a.list-group-item-success.active,a.list-group-item-success.active:focus,a.list-group-item-success.active:hover,button.list-group-item-success.active,button.list-group-item-success.active:focus,button.list-group-item-success.active:hover {
+  color: #fff;
+  background-color: #3c763d;
+  border-color: #3c763d;
+}
+
+.list-group-item-info {
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+a.list-group-item-info,button.list-group-item-info {
+  color: #31708f;
+}
+
+a.list-group-item-info .list-group-item-heading,button.list-group-item-info .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item-info:focus,a.list-group-item-info:hover,button.list-group-item-info:focus,button.list-group-item-info:hover {
+  color: #31708f;
+  background-color: #c4e3f3;
+}
+
+a.list-group-item-info.active,a.list-group-item-info.active:focus,a.list-group-item-info.active:hover,button.list-group-item-info.active,button.list-group-item-info.active:focus,button.list-group-item-info.active:hover {
+  color: #fff;
+  background-color: #31708f;
+  border-color: #31708f;
+}
+
+.list-group-item-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+
+a.list-group-item-warning,button.list-group-item-warning {
+  color: #8a6d3b;
+}
+
+a.list-group-item-warning .list-group-item-heading,button.list-group-item-warning .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item-warning:focus,a.list-group-item-warning:hover,button.list-group-item-warning:focus,button.list-group-item-warning:hover {
+  color: #8a6d3b;
+  background-color: #faf2cc;
+}
+
+a.list-group-item-warning.active,a.list-group-item-warning.active:focus,a.list-group-item-warning.active:hover,button.list-group-item-warning.active,button.list-group-item-warning.active:focus,button.list-group-item-warning.active:hover {
+  color: #fff;
+  background-color: #8a6d3b;
+  border-color: #8a6d3b;
+}
+
+.list-group-item-danger {
+  color: #a94442;
+  background-color: #f2dede;
+}
+
+a.list-group-item-danger,button.list-group-item-danger {
+  color: #a94442;
+}
+
+a.list-group-item-danger .list-group-item-heading,button.list-group-item-danger .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item-danger:focus,a.list-group-item-danger:hover,button.list-group-item-danger:focus,button.list-group-item-danger:hover {
+  color: #a94442;
+  background-color: #ebcccc;
+}
+
+a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-group-item-danger.active:hover,button.list-group-item-danger.active,button.list-group-item-danger.active:focus,button.list-group-item-danger.active:hover {
+  color: #fff;
+  background-color: #a94442;
+  border-color: #a94442;
+}
+
+.list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-heading>.dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-title>.small,.panel-title>.small>a,.panel-title>a,.panel-title>small,.panel-title>small>a {
+  color: inherit;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel>.list-group,.panel>.panel-collapse>.list-group {
+  margin-bottom: 0;
+}
+
+
+.panel-group .panel-footer {
+  border-top: 0;
+}
+
+.panel-group .panel-footer+.panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+
+
+	
+.content-header {
+    position: relative;
+    padding: 15px 15px 0 15px
+}
+.content-header>h1 {
+    margin: 0;
+    font-size: 24px
+}
+.content-header>h1>small {
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 4px;
+    font-weight: 300
+}
+
+			div { text-align: justify; text-justify: inter-word; }
+			p { text-align: justify; text-justify: inter-word; font-size: 16px;}
+			.hedding{ font-weight: bold; text-transform: uppercase; color: #5f5c5c; }
+		</style>
+
+	</head>
+	<body class="hold-transition skin-blue sidebar-mini" >
+		<!-- Left side column. contains the logo and sidebar -->
+	
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<div class="row" id= "justify">
+					<div class="col-lg-12">
+						<div class="panel panel-default">
+							<div class="panel-heading" style="height: 40px">
+								<div class="box-name" style="width: 45%;float: left;height: 20px">
+									<span class="hedding">General Terms & Conditions</span>
+								</div>
+							</div>
+						</div>
+						<ul>
+								<p class="hedding">GENERAL TERMS & CONDITIONS</p>
+								<p >Welcome to Mavyn.in, India’s only B2B online interstate trucks hiring portal. We are connecting transporters with customers through our transparent web portal. Mavyn.in offers instant logistics solution to B2B industries. Mavyn.in is associated with large network of fleet owners / operators with proven capacities and calibre to deliver on time. Currently we offer services at few district in India and continuously adding further destinations from time to time.</p><p>
+									This Site/ Application/ Services is/are operated /provided by Mavyn . These terms and conditions (“User Terms”) apply to your visit to and use, of the Site whether through a computer or a mobile phone, the Service and the Application, as well as to all information, recommendations and or services provided to You on or through the Site, the Service and the Application. This document is an electronic record in terms of Information Technology Act, 2000 and rules thereunder as applicable and the provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures. By clicking on the “I ACCEPT” button, You are consenting to be bound by these User Terms. PLEASE ENSURE THAT YOU READ AND UNDERSTAND ALL THESE USER TERMS BEFORE YOU USE THE SITE. If You do not accept any of the User Terms, then please do not use the Site or avail any of the services being provided therein. YOUR AGREEMENT TO THESE USER TERMS SHALL OPERATE AS A BINDING AGREEMENT BETWEEN YOU AND MAVYN IN RESPECT OF THE USE AND SERVICES OF THE SITE.</p><p>
+
+									Your acceptance of the User Terms shall be deemed to include your acceptance of the privacy policy. By accepting these User Terms, you also allow Mavyn to send you promotional emails and SMS alerts from time to time. IT IS HEREBY EXPRESSLY CLARIFIED THAT THESE USER TERMS WILL NOT APPLY TO A CUSTOMER TAKING ‘MAVYN CORPORATE RIDES’ I.E., FOR CUSTOMERS WHO ARE EMPLOYEES OF CORPORATE ENTITIES WITH WHOM MAVYN HAS A DIRECT ARRANGEMENT.
+									</p>
+								
+								<p class="hedding">1. DEFINITIONS</p>
+								<p> All of the defined and capitalized terms in these User Terms will have the meaning assigned to them here below: </p>
+								<p>(i)  “Account” shall mean the account created by the Shipper or Partner on the Application for availing the Services provided by Mavyn. </p>
+								<p>(ii)  “Additional Charges” shall mean any inter-state taxes, etc. as may not be included in the Fare but payable to any third party / government authorities for undertaking the Ride under Applicable Law  </p>
+								<p>(iii)  “Applicable Laws” shall mean and include all applicable statutes, enactments, acts of legislature or parliament, laws, ordinances, rules, by-laws, regulations, notifications, guidelines, policies, directions, directives and orders of any governmental authority, tribunal, or a court of India. </p>
+								<p>(iv)  “Application” shall mean the mobile application “Mavyn” updated by Mavyn from time to time.  </p>
+								<p>(v)  “Convenience Free Charges” shall mean the Charges payable by the Customer to Mavyn for the Service i.e., for availing the technology services offered by Mavyn. Convenience Free Charges shall be chargeable on every booking made through the Site. The Convenience Free Charges shall be exclusive of all applicable taxes on the Convenience Charges, if any. </p>
+								<p>(vi)   “Cancellation Charges” shall mean the fare and Convenience Charges payable towards cancellation of a Ride by a Customer in terms of Clause 8 of these User Terms and the Cancellation Terms and Conditions. The Cancellation Charges shall be exclusive of all applicable taxes on the Cancellation Charges, if any. </p>
+								<p>(vii)   “District of Operation” shall mean a District in which the shipper and Partner avail and render the transportation services respectively. </p>
+								<p>(viii)   “Shipper/ You” means a person who has an Account on the Application. </p>
+								<p>(ix)  “Partner” shall mean and include such individuals as may be evaluated, appointed and trained by a Partner associated with us or provide the transportation services on its behalf and persons who are registered with Mavyn and own the Vehicles and who have necessary All India Permit. </p>
+								<p>(x)   “E-Wallet” shall mean an instrument, which can be used to make payments.  </p>
+								<p>(xi)  “Freight” shall mean such amount in Indian Rupees, which is reflected on the Application, as the freight payable for the specific shipment performed by a Partner. The Freight shall be exclusive of all applicable taxes, if any.  </p>
+								<p>(xii) “Force Majeure Event” shall mean any event arising due to any cause beyond the reasonable control of Mavyn. </p>
+								<p>(xiii)   “Mavyn” or “us” or “we” or “our” shall mean Mavyn, a company incorporated under the provisions of the Companies Act, 1956 and having its corporate office , which expression shall, unless it be repugnant to the context or meaning thereof, be deemed to mean and include all its successors, affiliates and permitted assigns.  </p>
+								<p>(xiv)   “Registration Data” shall mean and may include the present, valid, true and accurate name, email ID, phone number and such other information as may be required by Mavyn from the Customer from time to time for registration on the Application.</p>
+								<p>(xv)   “Shipment” shall mean the transportation of Goods in the Vehicle by the Shipper facilitated through the Site.  </p>
+								<p>(xvi) “Service(s)” means the facilitation of transportation of Goods by Mavyn through the Application or via a telephone request at the call centre of Mavyn, or booking on the Site, within the District of Operation, as elaborated in Clause 4. </p>
+								<p>(xvii) “Site” shall mean the Application and the website https://www.Mavyn.in operated by Mavyn or any other software that enables the use of the Application or such other URL as may be specifically provided by Mavyn.  </p>
+								<p>(xviii)  “Total Freight” shall mean and include the Freight, the Convenience Free Charges, the Cancellation Charges and Additional Charges and taxes as may be applicable from time to time. </p>
+								<p>(xix)   “Shipper” shall mean a Corporate entity either Partnership, HUF, Limited, Private Limited or any other legal identity who wants to wants to send their material from once place to another through Mavyn. </p>
+								<p>(xxi) “Vehicle” shall mean a Commercial truck, trailer or as defined under the Motor Vehicles Act, 2016.</p>
+								<p>(xxii)   “Partner” shall mean a Driver and/or an operator associated with us, offering the interstate service of transportation of Goods, as requested by the Customer on the Application. </p>
+								<p>(xxiii)   “ETA” shall mean the estimated time of arrival of the Vehicle, at the pick up point of the shipper, provided by Mavyn before the Shipment, which shall change from time to time.</p>
+								
+								<!-- 2-->
+								<p class="hedding">2. ELIGIBILITY </p>
+								<p> 2.1.  You will be “Eligible” to use the Services only when You fulfil all of the following conditions:  </p>
+								<p>(i)   You have attained at least 18 (eighteen) years of age.  </p>
+								<p>(ii)   You are competent to enter into a contract under the Applicable Laws. </p>
+								<p>If You reside in a jurisdiction that restricts the use of the Service because of age, or restricts the ability to enter into contracts such as this User Terms due to age, You must abide by such age limits.</p>
+							
+								<!---3-->
+								
+								<p class="hedding">3.  REGISTRATION AND ACCOUNT  </p>
+								<p> 3.1.  You understand and acknowledge that You can register on the Site only after complying with the requirements of this Clause 3 and by entering Your Registration Data.</p>
+								<p> 3.2.  You shall ensure that the Registration Data provided by You is accurate, complete, current, valid and true and is updated from time to time. We shall bear no liability for false, incomplete, old or incorrect Registration Data provided by You.    </p>
+								<p> 3.3.   You are solely responsible for maintaining the confidentiality of Your Registration Data and will be liable for all activities and transactions that occur through Your Account, whether initiated by You or any third party. Your Account cannot be transferred, assigned or sold to a third party. We shall not be liable for any loss that You may incur as a result of someone else using Your password or Account, either with or without Your knowledge.  </p>
+								<p> 3.4.   We reserve the right to suspend or terminate Your Account with immediate effect and for an indefinite period, if We have a reason to believe that the Registration Data or any other data provided by You is incorrect or false, or that the security of Your Account has been compromised in any way, or for any other reason We may find just or equitable. </p>
+								<p> 3.5. Except for the Registration Data or any other data submitted by You during the use of any other service offered through Site (“Permitted Information”), Mavyn does not want You to, and You should not, send any confidential or proprietary information to Mavyn on the Site or otherwise, unless otherwise is required by Applicable Laws. In accepting these User Terms You agree that any information or materials that You or individuals acting on Your behalf provide to Mavyn other than the Permitted Information will not be considered confidential or proprietary. </p>
+								<p> 3.6.   It is Your responsibility to check to ensure that You download the correct application for Your device. We are not liable if You do not have a compatible mobile device or if You download the wrong version of the Application for Your mobile device. We reserve the right to terminate the Service and the use of the Application should You be using the Service or Application with an incompatible or unauthorized device. </p>
+								<p> 3.7.   We allow You to open only one Account in association with the Registration Data provided by You. In case of any unauthorized use of Your Account please immediately reach Us at mavyn@yahoo.com/.  </p>
+								<p> 3.8.    In case, You are unable to access Your Account, please inform Us at mavyn@yahoo.com and make a written request for blocking Your Account. We will not be liable for any unauthorized transactions made through Your Account prior to the expiry of 72 (seventy two) hours after You have made a request in writing for blocking Your Account, and shall not have any liability in case of Force Majeure Event. </p>
+								
+							
+							<!---4-->
+								
+								<p class="hedding"> 4.  SERVICES    </p>
+								<p> 4.1.  The Site permits you to avail the transportation services offered by Mavyn. The Service allows You to send a request through Mavyn to a Partner on the Mavyn App or Website. The Partner has sole and complete discretion to accept or reject each request for Service. If the Partner accepts a request, Mavyn notifies You and provides information regarding the Driver - including Driver name, Vehicle license number, telephone contact details of the Driver and such other details as Mavyn may determine. </p>
+								<p> 4.2.  Mavyn shall procure reasonable efforts to bring You into contact with a Driver, subject to the availability of Driver in or around Your District at the moment of Your request for such services.</p>
+								<p> 4.3.    By using the Application or the Service, You further agree that: </p>
+								<p>(i)  You will only use the Service or download the Application for Your sole, personal use and will not resell or assign it to a third party;  </p>
+								<p>(ii) You will not use an account that is subject to any rights of a person other than You without appropriate authorization;  </p>
+								<p>(iii) You will not use the Service or Site for unlawful purposes; </p>
+								<p>(iv)  You will not try to harm the Service, Site or our network in any way whatsoever; </p>
+								<p>(v)   You will provide Mavyn with such information and documents which Mavyn may reasonably request; </p>
+								<p>(vi)   You will only use an authorized network to avail the Service; </p>
+								<p>(vii)   You are aware that when requesting Services, whether by message, via Site or calling the call centre of Mavyn, standard messaging charges, data charges, voice charges, as applicable, of the Your and Our phone network service providers, will apply; </p>
+								<p>(viii) You will comply with all Applicable Law from Your country of domicile and residence and the country, state and/or District in which You are present while using the Site or Service; and  </p>
+								<p>(ix)  You are aware of and shall comply with the Information Technology Act, 2000 and the rules, regulations and guidelines notified thereunder.</p>
+								
+								<!---4-->
+								<p> 4.4.   Mavyn reserves the right to immediately terminate the Service and the use of the Application in the event of non-compliance with any of the above requirements. Further, Mavyn will store the information provided by You or record your calls for contacting You for all Service related matters. You shall promptly inform Mavyn on any change in the information provided by You.  </p>
+								<p> 4.5. Mavyn or an authorised representative of Mavyn, shall provide information regarding services, discounts and promotions provided by Mavyn to You by way of an SMS or email to Your registered mobile number/registered email ID. You also have the option to discontinue receiving such information at any point of time. To discontinue receiving such information, You may at any point of time mail us at <span style="color:blue;" >mavyn@yahoo.com </span>and discontinue the same. </p>
+								<p> 4.6.   MAVYN WILL BE ENTITLED TO PROCESS AND TRANSFER YOUR INFORMATION AS AND WHEN IT DEEMS FIT AND IT MAY STORE OR TRANSFER YOUR INFORMATION IN A SERVER OUTSIDE INDIA OR THE COUNTRY WHERE YOU ARE LOCATED IN ORDER TO PERFORM MAVYN’S OBLIGATIONS UNDER THESE CUSTOMER T&C.  </p>
+								<p> 4.7.    You agree to grant Mavyn a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable (through multiple tiers) right to exercise the copyright, publicity, database rights or any other rights You have in your information, in any media now known or not currently known, with respect to Your information. YOU AGREE AND PERMIT MAVYN TO SHARE YOUR INFORMATION AND/OR PERMITTED INFORMATION, WITH THIRD PARTIES.   </p>
+								<p> 4.8.     Mavyn will be entitled to enter into any tie-up in terms of joint-venture or otherwise with any other institution engaged in the business of providing services analogous and/or similar to those herein contained. In such case, depending upon the modality and the mechanism as may be devised, You will be provided with the services by Mavyn jointly and/or severally with the party/ies in joint venture. You hereby give Your irrevocable consent and permission to such a tie-up. In the event of such a tie-up, the terms and conditions herein contained will, mutatis mutandis, become applicable in respect of such tie-up arrangement also. </p>
+								
+								
+								<!---5-->
+								
+								<p class="hedding"> 5.   CONFIRMATION OF BOOKING     </p>
+								<p> 5.1.   Mavyn shall, upon receiving the booking request from You in the manner set out above, proceed to confirm or decline the booking based on the availability of Vehicles at the pickup time, which shall be informed to You vide an SMS or email. In the event the booking is confirmed, You shall check the booking details including but not limited to pick up time and pick up place, and if there is incorrect detail, the same needs to be informed to us immediately by calling our call centre.  </p>
+								<p> 5.2.  You shall bear the consequences and damages for any delay that may be caused to You due to Your failure to check the confirmation SMS or email or failure to inform Mavyn of the incorrect details immediately.</p>
+							
+								<!---5-->
+								<p class="hedding"> 6.   PAYMENT</p>
+								<p> 6.1. Mavyn shall charge Convenience Free Charges for the Service which shall be determined and amended at the sole and absolute discretion of Mavyn. The Convenience Free  Charges shall be payable by you to Mavyn and shall be informed to you. </p>
+								<p> 6.2. Mavyn shall charge Freight to You for the shipment offered to You. </p>
+								<p> 6.3.  You shall be required to pay such Additional Charges, which will form part of the receipt of the Total Freight Charges. </p>
+								<p> 6.4. You shall be required to pay such Cancellation Charges in terms of Clause 8, which will form part of the receipt of the Total Freight Charges. </p>
+								<p> 6.5.  In addition to the Total Freight charges, You may be required to pay such other charges incurred by you during the Shipment through online transfer or cheque cash, which are not included in the receipt of the Total Freight Charges. </p>
+								<p> 6.6. The Total Freight Charges will be collected by Mavyn from You at the end of the shipment as set out in Clause 6.5. </p> 
+								<p> 6.7. Mavyn shall provide a receipt of the Total Freight Charges payable by You at the end of the Shipment, however, separate invoices raised by the Mavyn for Additional Charges, Halting Charges.</p>
+								<p> 6.8.  All applicable taxes in respect of the Freight, Convenience Charges, Additional Charges, Cancellation Charges shall be borne and payable by You to the Mavyn, as the case may be. </p>
+								<p> 6.9. You shall choose to pay for the Service Charges by either of the following three methods:  </p>
+								<p>i.  E-Wallet payment: Mavyn offers You the facility of making an online payment through an E-Wallet powered by a third party payment processor (“Payment Processor”). E-Wallet money will not be applicable on bookings made through the phone or while the user is not logged into his/her Account on the Site. The processing of payments, in connection with Your use of the E-Wallet will be subject to the terms, conditions, and privacy policies of the Payment Processor that Mavyn engages for the purpose. Mavyn will not be responsible for any errors by the Payment Processor in any manner. Further, even in cases of E-Wallet payments, all Additional Fee (defined below) shall have to be paid by You in cash, to the authority or person concerned. When You choose to make an E-Wallet payment, Mavyn shall collect the Freight for providing the transportation services. </p>
+								<p>ii. Ola Credit Payment: Payment for the Total freight Charges can be made to Mavyn on credit subject to the terms provided. When You choose to make an Mavyn Credit payment, Mavyn shall collect the Freight Charges for providing the transportation services.</p>
+								<p> 6.10. Any payment related issue, except when such issue is due to an error or fault in the Site, shall be resolved between You and the Payment Processor. Mavyn shall not be responsible for any unauthorized use of Your E-Wallet during or after availing the Services on the Site.</p>
+							   
+							   <!---7-->
+								<p class="hedding"> 7.   CANCELLATION POLICY </p>
+								<p> 7.1. You agree and acknowledge that You may cancel Your request for a Vehicle at any point of time subject to a Cancellation Charges as mentioned in Incentive and Charges clause. </p> 
+								<p> 7.2.  You shall be notified of the applicable Cancellation charges whenever You attempt to cancel a booking/service request. Mavyn shall provide a receipt of the Cancellation Charges, if any, payable by You for every cancellation in terms of the table above for such cancellations, however, separate invoices raised by Mavyn for the Cancellation Charges.  </p> 
+								<p> 7.3. The Cancellation Charges shall be payable by You at the completion of Your subsequent Shipment.  </p> 
+								<p> 7.4.  The mode of payment of the Cancellation Charges shall be either E-Wallet.  </p> 
+								
+								<!---8-->
+								<p class="hedding"> 8.  USER VIOLATION OF USER TERMS </p>
+								<p> 8.1.  You shall not misbehave with the Driver or act in violation of Applicable Law. In the event You are found to be involved in the activities set out above, we shall also have the right to terminate the Shipment and shall be blacklisted or terminated by Mavyn. </p>
+							
+								<!---9-->
+							
+								<p class="hedding"> 9. CUSTOMER RELATIONSHIP MANAGEMENT </p>
+								<p> 9.1. All issues, opinions, suggestions, questions and feedback while availing our Services shall be communicated to us through email address as mavyn@yahoo.com. In case of a Shipment booked on our Application, You shall be requested to give rating to the Driver, Vehicle and Mavyn, after its termination. You agree to be fair, accurate and non-disparaging while leaving comment, feedbacks, testimonials or reviews on or about the Services. </p>
+								<p> 9.2.  Reporting of any issue needs to be within 7 (seven) days of the happening of the issue, failing which, such issue will not be addressed. </p>
+								<p> 9.3.  Any issue reported on channels other than the above may be addressed by Mavyn only on a best-effort basis. Mavyn takes no liability for inability to get back on other channels. </p>
+								<p> 9.4.  Mavyn shall endeavour to respond to Your issues within 2 (two) working days of Your reporting the same and endeavour to resolve it at the earliest possible. It is hereby clarified that issues are resolved on severity basis, and certain may be resolved earlier than the other. However, Mavyn shall not be liable for any damages or losses in the event You are not satisfied with any such resolution. </p>
+							
+							
+								<!---10-->
+							
+								<p class="hedding">10. Prohibited Goods/Security </p>
+								<p>   Company does not allow to carry, nor perform other services regarding, goods which are in our sole opinion Prohibited/Hazardous. Goods including, but not limited to, those specified in the regulations, guidelines, technical instructions, codes applicable to us and our business or to the transport of, or the performance of other services regarding. Company accepts consignments only upon your declaration of the type and value of the consignment (“said to contain” basis). Company has no responsibility whatsoever as to the correctness of description, type or value thereof and you agree to indemnify us and hold us harmless from any claims that may be brought against us arising out of or relating to such declaration provided by you and any costs we will incur relating thereto.</p>
+							
+								<!---11-->
+							
+								<p class="hedding">11.  Rejected Consignments </p>
+								<p>   If the consignee refuses to accept delivery, Company will try to contact user and take appropriate action to recover the cost of transportation and other charges like demurrages, warehousing, handling, forwarding, disposing of or returning the consignment or any other expense incurred thereon</p>
+								
+								<!--12--->
+								<p class="hedding">12.  Software </p>
+								<p> Any software made available to work on this Site or on a Mobile device and/or to download information and resources from it (the "Software") is the exclusive property and copyrighted work of the Company and/or its associates. You are authorized to use this Software only for the purpose of visiting the Site, and/or downloading information, and resources from it or making necessary service bookings. You may use this Software for the aforementioned purpose only. Under no circumstances, you shall redistribute, restructure, sell, decompile, reverse engineer, disassemble or otherwise deal with the Software.</p>
+								
+								<!--13--->
+								<p class="hedding">13.  Limitation of Liability </p>
+								<p> Users shall at their own risk and responsibility make use of this site and the internet generally. Under no circumstances, shall the Company or its affiliates be liable for any direct, special, indirect, or consequential damages or any damages whatsoever; including but not limited to loss of use, data, or profits, without regard to the form of any action, including but not limited to contract, negligence, or other tort actions, arising out of or in connection with the use, copying, or display of the content resulting from access to or use of this site, or the internet generally, under contract, tort or any other cause of action or legal theory. Company believes that the entire content will be accurate, complete, and current, to the best of its knowledge and the Company does not make any warranty direct or indirect about the accuracy, completeness or currency of the content. As such, it remains Users sole responsibility to verify any information before relying on it. Users while using the Services of the Company which will be at the sole risk and responsibility of the User and the Company does not accept any liability for any direct, special, indirect, or consequential damages or any damages whatsoever; theft during transit, including but not limited to loss of use, data, or profits, without regard to the form of any action, including but not limited to contract, negligence, or other tort actions, arising out of or in connection with the Services or use of the same, under contract, tort or any other cause of action or legal theory. Company on best effort basis will support the users/service providers and provide the necessary information in case of a litigation filed by the user against the service provider or vice-versa as the as may be. Company has the right to make alterations and modifications to any information incorporated within this site without giving any prior notice. Company reserves the right to alter any of the Terms of Use without prior notice. Access to particular Services on this website may be subject to additional or different terms and conditions, as stipulated by Company from time to time. Continuous use of the website will be an acceptance of these terms and conditions by the users.</p>
+								
+								<!--14--->
+								<p class="hedding"> 14.  Law & Jurisdiction</p>
+								<p> Any software made available to work on this Site or on a Mobile device and/or to download information and resources from it (the "Software") is the exclusive property and copyrighted work of the Company and/or its associates. You are authorized to use this Software only for the purpose of visiting the Site, and/or downloading information, and resources from it or making necessary service bookings. You may use this Software for the aforementioned purpose only. Under no circumstances, you shall redistribute, restructure, sell, decompile, reverse engineer, disassemble or otherwise deal with the Software.</p>
+								
+							</ul>
+								<p>&nbsp;</p>
+					</div>
+				</div>
+		</section>
+

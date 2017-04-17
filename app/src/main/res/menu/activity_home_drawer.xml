@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newship"
+            android:icon="@drawable/home"
+            android:title="Home"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/Shipment"
+            android:icon="@drawable/shipment"
+            android:title="Shipment" />
+
+
+        <item
+            android:id="@+id/tracking"
+            android:icon="@drawable/tracking2"
+            android:title="Tracking" />
+
+        <item
+            android:id="@+id/jrnytracking"
+            android:icon="@drawable/jtracking"
+            android:title="Journey"
+          />
+        <item
+            android:id="@+id/shippayment"
+            android:icon="@drawable/payment"
+            android:title="Payment" />
+        <item
+            android:id="@+id/shiprating"
+            android:icon="@drawable/rating"
+            android:title="Rating" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile1"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/term"
+            android:icon="@drawable/term"
+            android:title="Terms &amp; Conditions" />
+
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/call"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+
+    </group>
+
+
+
+
+</menu>
